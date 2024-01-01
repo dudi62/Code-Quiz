@@ -4,15 +4,24 @@ This application is a timed quiz with multiple-choice questions. The quiz questi
 
 ## Code Overview
 
-The provided code excerpt is from the `logic.js` file, which handles the main logic of the quiz.
+### questions.js
 
-1. A countdown function is defined to handle the quiz timer.
+This file contains an array of objects, where each object represents a quiz question. Each object has three properties:
+- `question`: a string that contains the text of the question.
+- `choices`: an array of strings that contains the possible answers to the question.
+- `correctAnswer`: a string that contains the correct answer to the question.
 
-2. The `quizQuestions` array is randomized using the `sort` method with a function that returns a random number between -0.5 and 0.5.
+### scores.js
 
-3. The `qDisplay` function is defined to display the questions. It takes an index as a parameter, which is used to access the current question from the `quizQuestions` array. The function displays the question title and creates a button for each choice. Each button is appended to the "choices" container and an event listener is added to it.
+This file is responsible for managing the scores. It contains functions to add a new score and clear all scores. The scores are stored in an array.
 
-4. The event listener checks if the selected answer is correct. If it is, it increments the user's score, plays a correct answer audio, shows feedback, and loads the next question. If the answer is incorrect, it decrements the time (if the remaining time is greater than or equal to 10 seconds), plays a wrong answer audio, shows feedback, and loads the next question.
+### logic.js
+
+This file contains the main logic of the quiz. It imports the functions from `scores.js` and uses them to manage the scores. It also contains functions to start and end the quiz, and calculate the score based on the answers.
+
+### highscores.html
+
+This file is the HTML document for the high scores page. It contains a list to display the high scores and a button to clear the scores.
 
 ## Usage
 
