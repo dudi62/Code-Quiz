@@ -24,6 +24,9 @@ This file contains the main logic of the quiz. It imports the functions from `sc
 This file is the HTML document for the high scores page. It contains a list to display the high scores and a button to clear the scores.
 
 ## Usage
+![2024-01-01](https://github.com/dudi62/Code-Quiz/assets/63518444/cd05709f-1c6a-46fc-963c-823acd29cf2e)
+![scores](https://github.com/dudi62/Code-Quiz/assets/63518444/6aa36be0-2fa1-4404-b585-2c3be2824f5c)
+
 
 To start the quiz, simply open the `index.html` file in your web browser and click the "Start Quiz" button. Answer the questions as they appear. Your final score will be the number of correct answers. If you answer incorrectly, time will be deducted from the timer.
 
